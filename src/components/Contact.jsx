@@ -29,9 +29,10 @@ export default function Contact(){
   }
 
   return (
-    <section id="contact" className="w-full section-spacing bg-white">
-      <div className="container-responsive">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24">
+    <>
+      <section id="contact" className="w-full section-spacing bg-white">
+        <div className="container-responsive">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24">
           {/* Left Column */}
           <div className="flex flex-col justify-center">
             <h2 className="text-primary font-playfair text-3xl md:text-5xl leading-tight mb-6">
@@ -199,8 +200,38 @@ export default function Contact(){
               </div>
             )}
           </form>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section id="directions" className="w-full bg-neutral-50 py-12">
+        <div className="container-responsive">
+          <h3 className="text-primary font-playfair text-2xl mb-4">Get Directions</h3>
+          <p className="text-muted-text mb-4">Open in Google Maps for step-by-step directions.</p>
+
+          <div className="flex flex-col md:flex-row gap-4 items-start">
+            <a
+              href="https://share.google/fl3ObXXG9PvSHwyGX"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-outline inline-flex items-center px-5 py-3 rounded-xl"
+            >
+              Get Directions
+            </a>
+
+            <div className="flex-1 min-h-[200px] bg-white border border-border rounded-xl overflow-hidden">
+              <iframe
+                title="Urban Creation Interior Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.0097164694466!2d76.95496201920264!3d28.47925402772786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1765ec34c487%3A0x55f2d1c5498be6f5!2sUrban%20creation!5e0!3m2!1sen!2sin!4v1790399296069!5m2!1sen!2sin"
+                className="w-full h-60 border-0"
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="strict-origin-when-cross-origin"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   )
 }

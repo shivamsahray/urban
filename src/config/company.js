@@ -8,7 +8,7 @@ export const company = {
 }
 
 export const companyStats = [
-  { value: 'XX+', label: 'Projects' },
-  { value: 'XX+', label: 'Clients' },
-  { value: 'XX', label: 'Categories' },
+  { value: '99+', label: 'Projects' },
+  { value: '99+', label: 'Clients' },
+  { value: '30', label: 'Categories' },
 ]

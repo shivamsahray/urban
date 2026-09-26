@@ -87,7 +87,7 @@ export default function Footer(){
               {[
                 { icon: Phone, label: 'Phone', value: company.phone, href: `tel:${company.phone}` },
                 { icon: Mail, label: 'Email', value: company.email, href: `mailto:${company.email}` },
-                { icon: MapPin, label: 'Location', value: company.location, href: null },
+                { icon: MapPin, label: 'Location', value: company.location, href: 'https://share.google/fl3ObXXG9PvSHwyGX'  },
                 { icon: MessageCircle, label: 'WhatsApp', value: 'Chat with us', href: `https://wa.me/${company.whatsapp}` },
               ].map((item) => {
                 const Icon = item.icon
